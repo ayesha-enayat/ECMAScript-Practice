@@ -74,11 +74,11 @@
 //     console.log(a+b+c);  
 // }
 // sum(...arr)//Rest Parameter
-let arr= [1,2,3,4,5,6,7]
-function unKnownNumberOfParameters(...rest) {
-    console.log(rest);
+// let arr= [1,2,3,4,5,6,7]
+// function unKnownNumberOfParameters(...rest) {
+//     console.log(rest);
     
-}
-// unKnownNumberOfParameters(...arr)
-unKnownNumberOfParameters(1,2,3,4,5,6,7,8,11,2,33)
+// }
+// // unKnownNumberOfParameters(...arr)
+// unKnownNumberOfParameters(1,2,3,4,5,6,7,8,11,2,33)
 
