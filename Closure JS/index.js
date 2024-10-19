@@ -1,4 +1,4 @@
-//****************** Lexicalscoping and closure **************************
+//****************** Lexicalscoping **************************
 
 // function outer(){
 //     let var1='This is outer function var';
@@ -32,8 +32,30 @@ function init(){
 init(); */
 
 
+// ****************************Function Declaration
+// function myFunc(name){
+//     console.log("Hello "+ name);
+// }
+// myFunc("Function Declaration")
 
-/*
+//********************************Arrow Function
+// myFunc=(name)=>{
+//     console.log("Hello "+ name);
+// }
+// myFunc("Arrow Function")
+
+// ******************************Function Expression
+// var myFunc1 =function(name){
+//     console.log("Hello "+ name);
+//}
+
+// myFunc1("Function Expression")
+// const funcOutput = myFunc1
+// funcOutput("Function Expression")
+// console.log(funcOutput);
+
+// ********************Higher Order Function (Function returning function)*********************************
+/* 
 function outerFunction(){
     let outerVariable='This is outer function variable';
     function innerFunction(){
@@ -49,7 +71,7 @@ myFunction(); // it will show the value of outerVariable
 
 
 
-
+// **************************Closure ***********************************
 // function hello(x){
 //     const a='VAR1';
 //     const b='VAR2';
@@ -87,23 +109,23 @@ myFunction(); // it will show the value of outerVariable
 // const finalAns = ans() //return thirdFunc
 // finalAns()
 
-function firstFunction(){
-    const firstVar='This is variable 1';
-    function secondFunction(){
-        const secondVar='This is variable 2';
-        function thirdFunction(){
-            const thirdVar='This is variable 3';
-            console.log(firstVar,secondVar,thirdVar); 
-        }
-        return thirdFunction;
-    }
-    return secondFunction;
-}
-const  Firstans = firstFunction(); //it return secondFunction
-// console.log(Firstans);
-const secondans=Firstans();
-// console.log(secondans); it  return second Function
-secondans();
+// function firstFunction(){
+//     const firstVar='This is variable 1';
+//     function secondFunction(){
+//         const secondVar='This is variable 2';
+//         function thirdFunction(){
+//             const thirdVar='This is variable 3';
+//             console.log(firstVar,secondVar,thirdVar); 
+//         }
+//         return thirdFunction;
+//     }
+//     return secondFunction;
+// }
+// const  Firstans = firstFunction(); //it return secondFunction
+// // console.log(Firstans);
+// const secondans=Firstans();
+// // console.log(secondans); it  return second Function
+// secondans();
 
 // const ans = firstFunction()//return secondFunc
 // const finalAns = ans() //return thirdFunc
