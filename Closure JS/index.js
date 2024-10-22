@@ -20,54 +20,18 @@
     inner();
     innerTwo()
 };
-outer();            
+outer();  
+*/          
 
-function init(){
-    let name = 'Ayesha';
-    function displayName(){
-        console.log(name); 
-    }
-    displayName();
-}
-init(); */
-
-
-// ****************************Function Declaration
-// function myFunc(name){
-//     console.log("Hello "+ name);
+// function init(){
+//     let name = 'Ayesha';
+//     function displayName(){
+//         console.log(name); 
+//     }
+//     name='Aqsa'
+//     displayName();
 // }
-// myFunc("Function Declaration")
-
-//********************************Arrow Function
-// myFunc=(name)=>{
-//     console.log("Hello "+ name);
-// }
-// myFunc("Arrow Function")
-
-// ******************************Function Expression
-// var myFunc1 =function(name){
-//     console.log("Hello "+ name);
-//}
-
-// myFunc1("Function Expression")
-// const funcOutput = myFunc1
-// funcOutput("Function Expression")
-// console.log(funcOutput);
-
-// ********************Higher Order Function (Function returning function)*********************************
-/* 
-function outerFunction(){
-    let outerVariable='This is outer function variable';
-    function innerFunction(){
-        console.log(outerVariable);
-    }
-    return  innerFunction;
-}
-//outerFunction() it will not show anything
-
-const myFunction=outerFunction();
-myFunction(); // it will show the value of outerVariable  
-*/
+// init(); 
 
 
 
