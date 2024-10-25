@@ -38,7 +38,7 @@
 // let {a,b}=obj; //undefined
 // console.log(a);
 // console.log(b);
-// console.log(obj.name,obj.ag
+// console.log(obj.name,obj.age
 
 // let {a,b}={a:'ayesha',b:15};
 // console.log(a);

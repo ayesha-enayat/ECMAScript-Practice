@@ -18,7 +18,7 @@
 
 
 // _____________________CallBack function___________________________________________
-//Callback=a function that is passed as a argument to another function
+//Callback=a function that is passed as an argument to another function
 //used to handle asynchronous operations
 //1.Reading a file
 //2.Network Request

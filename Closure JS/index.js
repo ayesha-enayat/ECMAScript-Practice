@@ -36,6 +36,9 @@ outer();
 
 
 // **************************Closure ***********************************
+//A closure is a function along with its lexical environment
+
+
 // function hello(x){
 //     const a='VAR1';
 //     const b='VAR2';
