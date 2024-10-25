@@ -26,8 +26,8 @@
 //hey when you are done,call this next
 
 // hello(goodBye);
-// hello(leave);
-// // goodBye();
+// // hello(leave);
+// // // goodBye();
 
 // function hello(callback){
 //     console.log('hello!');
@@ -52,7 +52,68 @@
 //     console.log(result);
     
 // }
-// sum(displayPage,1,2)
+// sum(displayConsole,1,2)
 // function displayPage(result){
 //     document.getElementById('myh1').textContent=result;
 // }
+
+// _____________________Shallow Copy___________________________________________
+// let obj={
+//     name:'Ghous',
+//     fname:'Ahmad'
+// }
+// let obj1=obj;
+// let obj2=obj1;
+// obj2.name='Israar';
+// console.log(obj,obj1,obj2);
+
+// let obj1=obj;
+// let obj2={...obj1};  //Shallow copy of object
+// obj2.name='Israar';
+// console.log(obj,obj1,obj2);
+
+
+// _____________________Deep Copy________________________________________________
+
+// let obj={
+//     name:'Ghous',
+//     school:{
+//         ShoolName:'SMIT'
+//     }
+// }
+// let obj1=obj;
+// let obj2={...obj1};
+// obj2.school.ShoolName='Saylani';  //shallow copy not work on nested objects
+// console.log(obj,obj1,obj2);
+
+// let obj2=JSON.parse(JSON.stringify(obj));
+// obj2.school.ShoolName='Saylani'; 
+// console.log(obj,obj1,obj2);
+
+
+// _______________________Enhanced Object Literals______________________________________________
+//Note:Variable name and property of object name must be same
+// let student="Ayesha";
+// let school="SMIT";
+
+// let obj={
+//     student,
+//     school
+// }
+// console.log(obj.student,obj.school);
+
+// _______________________Optional Chaining_____________________________________________
+// let obj={
+//     student:'Ayesha',
+//     school:'SMIT',
+//     class:{
+//         section:'V-A'
+//     }
+// }
+// // console.log(obj.class.section);
+// // console.log(obj.class.section.grade); //undefined
+// // console.log(obj.class.section.grade.position); //error
+
+
+// console.log(obj?.class?.section?.grade?.position); //Undefined
+// console.log(obj.student);
