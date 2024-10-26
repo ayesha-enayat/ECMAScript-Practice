@@ -9,13 +9,13 @@
 // }
 // myFunc("Arrow Function")
 // //Function Expression
-var myFunc =function(name){
-    console.log("Hello "+ name);
-}
-myFunc("Function Expression")
-const funcOutput = myFunc
-funcOutput("Function Expression")
-console.log(funcOutput);
+// var myFunc =function(name){
+//     console.log("Hello "+ name);
+// }
+// myFunc("Function Expression")
+// const funcOutput = myFunc
+// funcOutput("Function Expression")
+// console.log(funcOutput);
 // ________________________________HigherOrderFunction
 // Function returning Function
 // function outerFunction(){
